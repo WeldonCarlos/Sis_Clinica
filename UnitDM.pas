@@ -22,6 +22,12 @@ type
     TbPacientecelular: TStringField;
     TbPacientedata_cadastro: TDateField;
     TbPacientecpf: TStringField;
+    TbAgendamentoid: TFDAutoIncField;
+    TbAgendamentoid_paciente: TIntegerField;
+    TbAgendamentodata: TDateField;
+    TbAgendamentohora: TStringField;
+    TbAgendamentoespecialidade: TStringField;
+    TbAgendamentomedico: TStringField;
     procedure TbPacienteAfterInsert(DataSet: TDataSet);
   private
     { Private declarations }

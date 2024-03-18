@@ -23,6 +23,7 @@ object DM: TDM
     object TbPacienteid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object TbPacientenome: TStringField
       FieldName = 'nome'
@@ -63,6 +64,40 @@ object DM: TDM
     TableName = 'clinica.agendamento'
     Left = 218
     Top = 24
+    object TbAgendamentoid: TFDAutoIncField
+      FieldName = 'id'
+      Origin = 'id'
+    end
+    object TbAgendamentoid_paciente: TIntegerField
+      FieldName = 'id_paciente'
+      Origin = 'id_paciente'
+      Required = True
+    end
+    object TbAgendamentodata: TDateField
+      FieldName = 'data'
+      Origin = 'data'
+      Required = True
+      EditMask = '##/##/####;1;_'
+    end
+    object TbAgendamentohora: TStringField
+      FieldName = 'hora'
+      Origin = 'hora'
+      Required = True
+      EditMask = '##:##;1;_'
+      Size = 8
+    end
+    object TbAgendamentoespecialidade: TStringField
+      FieldName = 'especialidade'
+      Origin = 'especialidade'
+      Required = True
+      Size = 25
+    end
+    object TbAgendamentomedico: TStringField
+      FieldName = 'medico'
+      Origin = 'medico'
+      Required = True
+      Size = 30
+    end
   end
   object DsAgendamento: TDataSource
     DataSet = TbAgendamento

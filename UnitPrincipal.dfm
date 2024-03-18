@@ -2,8 +2,8 @@ object FormPrincipal: TFormPrincipal
   Left = 0
   Top = 0
   Caption = 'Princial - Clinic Family Medical'
-  ClientHeight = 442
-  ClientWidth = 628
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,8 +16,8 @@ object FormPrincipal: TFormPrincipal
   object ImageLogo: TImage
     Left = 0
     Top = 77
-    Width = 628
-    Height = 324
+    Width = 624
+    Height = 323
     Align = alClient
     Center = True
     Picture.Data = {
@@ -736,12 +736,15 @@ object FormPrincipal: TFormPrincipal
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000000000000000000001FFD9}
     ExplicitTop = 81
+    ExplicitWidth = 628
+    ExplicitHeight = 324
   end
   object ActionMainMenuBar1: TActionMainMenuBar
     Left = 0
     Top = 76
-    Width = 628
+    Width = 624
     Height = 1
+    UseSystemFont = False
     Caption = 'ActionMainMenuBar1'
     Color = clMenuBar
     ColorMap.DisabledFontColor = 7171437
@@ -749,17 +752,16 @@ object FormPrincipal: TFormPrincipal
     ColorMap.BtnSelectedFont = clBlack
     ColorMap.UnusedColor = clWhite
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clBlack
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
     Spacing = 0
-    ExplicitTop = 0
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 628
+    Width = 624
     Height = 76
     Align = alTop
     Color = clMenuBar
@@ -994,7 +996,6 @@ object FormPrincipal: TFormPrincipal
       Layout = blGlyphTop
       TabOrder = 0
       OnClick = BtnPacienteClick
-      ExplicitHeight = 70
     end
     object BtnAgenda: TBitBtn
       Left = 89
@@ -1225,20 +1226,15 @@ object FormPrincipal: TFormPrincipal
       Layout = blGlyphTop
       TabOrder = 1
       OnClick = BtnAgendaClick
-      ExplicitLeft = 76
-      ExplicitHeight = 70
     end
   end
   object Panel2: TPanel
     Left = 0
-    Top = 401
-    Width = 628
+    Top = 400
+    Width = 624
     Height = 41
     Align = alBottom
     TabOrder = 2
-    ExplicitLeft = 192
-    ExplicitTop = 384
-    ExplicitWidth = 185
   end
   object MainMenu1: TMainMenu
     Left = 344
